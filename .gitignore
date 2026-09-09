@@ -216,3 +216,36 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# AI / ML / Colab / Egg Inspection Project
+# ==========================================
+
+# 1. AI Model Weights & Checkpoints (대용량 모델 가중치 파일 제외)
+*.pt
+*.pth
+*.h5
+*.onnx
+*.pkl
+*.bin
+*.engine
+
+# 2. Datasets (이미지, 라벨링 데이터셋 제외 - 구글 드라이브 활용)
+*.zip
+*.tar
+*.gz
+data/
+datasets/
+ai/datasets/
+
+# 3. Google Colab & Local Temp Files
+.colab/
+colab_tmp/
+runs/
+wandb/
+
+# 4. OS & IDE Specifics
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
